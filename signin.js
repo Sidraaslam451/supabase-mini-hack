@@ -19,7 +19,7 @@ async function  loginUser(e) {
         if (error){
             alert(error.message);
         }else{
-            window.location.href = "homepage.html";
+            window.location.href = "home.html";
         }
     }
 }

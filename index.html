@@ -18,15 +18,50 @@
     <title>Supabase Project</title>
 </head>
 <body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Signup | PostApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Create Your Account</h2>
+            <p class="subtitle">Join the Future of Sharing</p>
 
-    
-    
-    <form id="signup-user">
-        <input type="text" id="username" placeholder="username" required>
-        <input type="text" id="email" placeholder="email" required>
-        <input type="text" id="password" placeholder="password" required>
-        <button type="submit">SignUp</button>
-    </form>
+            <form id="signup-user">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" id="username" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <p class="footer-text">Already have an account? <a href="signin.html">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
 
     <script type="module" src="config.js"></script>
     <script type="module" src="authentication.js"></script>

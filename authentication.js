@@ -41,7 +41,7 @@ async function register(e) {
         console.log("profile error insert", profileError.message);
         
     }
-    window.location.href = "signInpage.html";
+    window.location.href = "signin.html";
   }
 }
 

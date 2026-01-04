@@ -265,3 +265,55 @@ button:hover {
     display: table;
     clear: both;
 }
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Tablets aur Mobile ke liye (992px se niche) */
+@media (max-width: 768px) {
+    body {
+        /* Mobile par scroll allow karne ke liye overflow change kiya */
+        overflow-y: auto;
+        padding: 20px;
+        align-items: flex-start; /* Taake content upar se start ho */
+    }
+
+    .signup-box, .login-box {
+        width: 100%;
+        max-width: 380px; /* Choti screen par fit aane ke liye */
+        padding: 30px 20px;
+    }
+
+    .post-card-container {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #publish-btn {
+        width: 100%; /* Mobile par button full width zyada acha lagta hai */
+        float: none;
+        margin-top: 10px;
+    }
+}
+
+/* Bohat choti screens ke liye (Extra Small devices) */
+@media (max-width: 480px) {
+    .signup-box, .login-box {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .input-group label {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

@@ -17,7 +17,7 @@
 
             <div class="input-group">
                 <label>Title</label>
-                <input type="text" id="title" placeholder="Enter post title">
+                <input type="text" id="post-title" placeholder="Enter post title">
             </div>
 
             <div class="input-group">
@@ -27,17 +27,16 @@
 
             <div class="input-group">
                 <label>Content</label>
-                <textarea id="content" rows="4" placeholder="Write your post content..." 
+                <textarea id="post-content" rows="4" placeholder="Write your post content..." 
                     style="width: 100%; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; color: white; padding: 12px; outline: none;"></textarea>
             </div>
 
-            <button onclick="createPost" id="publish-btn" style="width: auto; padding: 12px 30px; float: right;">Publish Post</button>
+            <button onclick="savePost()" id="publish-btn" style="width: auto; padding: 12px 30px; float: right;">Publish Post</button>
             <div style="clear: both;"></div>
         </div>
 
         <div id="posts-container"></div>
     </div>
-
-    <script src="home.js"></script>
+    <script type="module" src="home.js"></script>
 </body>
 </html>

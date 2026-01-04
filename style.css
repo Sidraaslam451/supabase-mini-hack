@@ -157,3 +157,111 @@ button:hover {
 .footer-text a:hover {
     text-decoration: underline;
 }
+
+
+/* Glassmorphism Card for Create Post */
+.post-card-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto; /* Center alignment */
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Neon Glow Effect on the Card */
+.post-card-container::before {
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(45deg, #7c4dff, transparent, #00f2fe);
+    z-index: -1;
+    border-radius: 22px;
+    opacity: 0.4;
+}
+
+.post-card-container h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.post-card-container .subtitle {
+    color: #b0b0b0;
+    font-size: 13px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Input Fields Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #00f2fe; /* Cyan Glow color */
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s all ease;
+}
+
+/* Special styling for File Input */
+.input-group input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #7c4dff;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.2);
+}
+
+/* Publish Button (Right Aligned like your image) */
+#publish-btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #7c4dff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    transition: 0.4s;
+    text-transform: capitalize;
+}
+
+#publish-btn:hover {
+    background: #7c4dff;
+    box-shadow: 0 0 20px rgba(124, 77, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Clearfix for the floated button */
+.post-card-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feed | PostApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-    
-    <h1>Welcome to the homepage!</h1>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <div class="signup-box" style="width: 100%; max-width: 550px; margin-bottom: 30px;">
+            <h2 style="text-align: left;">Create New Post</h2>
+            <p class="subtitle" style="text-align: left;">Share your thoughts with the community</p>
+
+            <div class="input-group">
+                <label>Title</label>
+                <input type="text" id="title" placeholder="Enter post title">
+            </div>
+
+            <div class="input-group">
+                <label>Image</label>
+                <input type="file" id="image" accept="image/*" style="padding: 8px;">
+            </div>
+
+            <div class="input-group">
+                <label>Content</label>
+                <textarea id="content" rows="4" placeholder="Write your post content..." 
+                    style="width: 100%; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; color: white; padding: 12px; outline: none;"></textarea>
+            </div>
+
+            <button id="publish-btn" style="width: auto; padding: 12px 30px; float: right;">Publish Post</button>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div id="posts-container"></div>
+    </div>
+
+    <script type="module" src="home.js"></script>
 </body>
 </html>
